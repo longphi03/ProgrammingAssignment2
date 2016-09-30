@@ -37,6 +37,7 @@ cacheSolve <- function(x, ...) {
   inv = x$getinv()
   #get x's invert from cache
   if (!is.null(inv)){
+    message("getting cached data")
     return(inv)
   }else{# calculate x's invert
     mat = x$get()
